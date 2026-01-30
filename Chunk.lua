@@ -100,7 +100,7 @@ function Chunk.unloadChunk(self, chunk)
 	
 	local blocks = chunks[chunkName]
 	if (not blocks) then return end
-
+	
 	local blockContainer = chunkContainer:FindFirstChild(chunkName)
 	if (not blockContainer) then return end
 	
@@ -108,9 +108,9 @@ function Chunk.unloadChunk(self, chunk)
 		block:Destroy()
 		task.wait()
 	end
-
+	
 	blockContainer:Destroy()
-	blocks[chunkName] = nil
+	chunks[chunkName] = nil
 end
 
 return Chunk
