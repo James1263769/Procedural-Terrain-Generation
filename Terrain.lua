@@ -60,7 +60,7 @@ local function updateTerrain(deltaTime)
 			local chunkPosition = vector.create(chunkX, 0, chunkZ + z)
 			task.spawn(chunk.loadChunk, chunk, chunkPosition)
 		end
-
+		
 		local chunkX = currentChunk.X - renderDistance * chunkXDifference
 		for z = -renderDistance, renderDistance do
 			local chunkPosition = vector.create(chunkX, 0, chunkZ + z)

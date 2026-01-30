@@ -3,5 +3,5 @@ return {
 	Frequency = 75,
 	BlockSize = 5,
 	ChunkSize = 16,
-	RenderDistance = 16
+	RenderDistance = 8
 }
